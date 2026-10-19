@@ -1,0 +1,530 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF7FF">
+
+    <!--Menu botones-->
+    <LinearLayout
+        android:id="@+id/menuBotones"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <Button
+            android:id="@+id/btnCanvas"
+            android:layout_width="220dp"
+            android:layout_height="52dp"
+            android:backgroundTint="#6B50AA"
+            android:text="Clase Canvas"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/btnPaint"
+            android:layout_width="220dp"
+            android:layout_height="52dp"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="#6B50AA"
+            android:text="Clase Paint"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/btnPath"
+            android:layout_width="220dp"
+            android:layout_height="52dp"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="#6B50AA"
+            android:text="Clase Path"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/btnColorsXML"
+            android:layout_width="220dp"
+            android:layout_height="52dp"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="#6B50AA"
+            android:text="Archivo colors.xml"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/btnDrawable"
+            android:layout_width="220dp"
+            android:layout_height="52dp"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="#6B50AA"
+            android:text="Clase Drawable"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF" />
+
+    </LinearLayout>
+
+    <!--          Pantallas          -->
+    <!-- Canvas -->
+    <LinearLayout
+        android:id="@+id/paginaCanvas"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="90dp"
+        android:visibility="gone">
+
+        <Button
+            android:id="@+id/btnVolverCanvas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Volver" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Canvas"
+            android:textSize="24sp" />
+
+
+        <com.example.clasesgraficos.ClaseCanvas
+            android:layout_width="match_parent"
+            android:layout_height="600dp" />
+
+    </LinearLayout>
+
+    <!-- Paint -->
+    <LinearLayout
+        android:id="@+id/paginaPaint"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="90dp"
+        android:visibility="gone">
+
+        <Button
+            android:id="@+id/btnVolverPaint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Volver" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Paint"
+            android:textSize="24sp" />
+
+        <com.example.clasesgraficos.ClasePaint
+            android:layout_width="match_parent"
+            android:layout_height="1000dp"
+            android:layout_marginTop="10dp"/>
+
+    </LinearLayout>
+
+    <!-- Path -->
+    <LinearLayout
+        android:id="@+id/paginaPath"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="90dp"
+        android:visibility="gone">
+
+        <Button
+            android:id="@+id/btnVolverPath"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Volver" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Path"
+            android:textSize="24sp" />
+
+        <com.example.clasesgraficos.ClasePath
+            android:layout_width="match_parent"
+            android:layout_height="1000dp"
+            android:layout_marginTop="10dp"/>
+
+
+    </LinearLayout>
+
+    <!--ColorsXML-->
+    <LinearLayout
+        android:id="@+id/paginaColorsXML"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="90dp"
+        android:visibility="visible">
+
+        <Button
+            android:id="@+id/btnVolverColorsXML"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Volver" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Archivo colors.xml"
+            android:textSize="24sp" />
+
+        <com.example.clasesgraficos.Colors_xml
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="90dp" />
+
+
+    </LinearLayout>
+
+    <!-- Drawable -->
+    <LinearLayout
+        android:id="@+id/paginaDrawable"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="90dp"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Drawable"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/btnVolverDrawable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Volver" />
+
+        <!--Subtemas-->
+    <LinearLayout
+            android:id="@+id/submenuBotones"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <Button
+                android:id="@+id/btnBitmapDrawable"
+                android:layout_width="220dp"
+                android:layout_height="52dp"
+                android:backgroundTint="#FF0000"
+                android:text="BitmapDrawable"
+                android:textAllCaps="false"
+                android:textColor="#FFFFFF" />
+
+            <Button
+                android:id="@+id/btnVectorDrawable"
+                android:layout_width="220dp"
+                android:layout_height="52dp"
+                android:backgroundTint="#FFED00"
+                android:text="VectorDrawable"
+                android:textAllCaps="false"
+                android:textColor="#000000" />
+
+            <Button
+                android:id="@+id/btnLayerDrawable"
+                android:layout_width="220dp"
+                android:layout_height="52dp"
+                android:backgroundTint="#005EFF"
+                android:text="LayerDrawable"
+                android:textAllCaps="false"
+                android:textColor="#FFFFFF" />
+
+            <Button
+                android:id="@+id/btnStateListDrawable"
+                android:layout_width="220dp"
+                android:layout_height="52dp"
+                android:backgroundTint="#FF6F00"
+                android:text="StateListDrawable"
+                android:textAllCaps="false"
+                android:textColor="#FFFFFF" />
+
+            <Button
+            android:id="@+id/btnGradientDrawable"
+            android:layout_width="220dp"
+            android:layout_height="52dp"
+            android:backgroundTint="#4CAF50"
+            android:text="GradientDrawable"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF" />
+
+            <Button
+            android:id="@+id/btnTransitionDrawable"
+            android:layout_width="220dp"
+            android:layout_height="52dp"
+            android:backgroundTint="#FF4DE6"
+            android:text="TransitionDrawable"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF" />
+
+            <Button
+                android:id="@+id/btnShapeDrawable"
+                android:layout_width="220dp"
+                android:layout_height="52dp"
+                android:backgroundTint="#FF0000"
+                android:text="ShapeDrawable"
+                android:textAllCaps="false"
+                android:textColor="#FFFFFF" />
+
+            <Button
+                android:id="@+id/btnAnimationDrawable"
+                android:layout_width="220dp"
+                android:layout_height="52dp"
+                android:backgroundTint="#FFED00"
+                android:text="AnimationDrawable"
+                android:textAllCaps="false"
+                android:textColor="#000000" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <!--          Subtema BitmapDrawable          -->
+    <LinearLayout
+        android:id="@+id/paginaBitmapDrawable"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="90dp"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="BitmapDrawable"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/btnVolverBitmapDrawable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Volver" />
+
+        <com.example.clasesgraficos.drawable.SubBitmapDrawable
+            android:layout_width="match_parent"
+            android:layout_height="600dp" />
+
+    </LinearLayout>
+
+    <!--Subtema VectorDrawable-->
+    <LinearLayout
+        android:id="@+id/paginaVectorDrawable"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="90dp"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="VectorDrawable"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/btnVolverVectorDrawable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Volver" />
+
+        <com.example.clasesgraficos.drawable.SubVectorDrawable
+            android:layout_width="match_parent"
+            android:layout_height="600dp" />
+
+    </LinearLayout>
+
+    <!--Subtema LayerDrawable-->
+    <LinearLayout
+        android:id="@+id/paginaLayerDrawable"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="90dp"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="LayerDrawable"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/btnVolverLayerDrawable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Volver" />
+
+        <com.example.clasesgraficos.drawable.SubLayerDrawable
+            android:layout_width="match_parent"
+            android:layout_height="600dp" />
+
+    </LinearLayout>
+
+    <!--Subtema StateListDrawable-->
+    <LinearLayout
+        android:id="@+id/paginaStateListDrawable"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="90dp"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="StateListDrawable"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/btnVolverStateListDrawable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Volver" />
+
+        <com.example.clasesgraficos.drawable.SubStateListDrawable
+            android:layout_width="match_parent"
+            android:layout_height="600dp" />
+
+    </LinearLayout>
+
+    <!--Subtema GradientDrawable-->
+    <LinearLayout
+        android:id="@+id/paginaGradientDrawable"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="90dp"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="GradientDrawable"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/btnVolverGradientDrawable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Volver" />
+
+        <com.example.clasesgraficos.drawable.SubGradientDrawable
+            android:layout_width="match_parent"
+            android:layout_height="600dp" />
+
+    </LinearLayout>
+
+    <!--Subtema TransitionDrawable-->
+    <LinearLayout
+        android:id="@+id/paginaTransitionDrawable"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="90dp"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="TransitionDrawable"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/btnVolverTransitionDrawable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Volver" />
+
+        <com.example.clasesgraficos.drawable.SubTransitionDrawable
+            android:layout_width="match_parent"
+            android:layout_height="600dp" />
+
+    </LinearLayout>
+
+    <!--Subtema ShapeDrawable-->
+    <LinearLayout
+        android:id="@+id/paginaShapeDrawable"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="90dp"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="ShapeDrawable"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/btnVolverShapeDrawable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Volver" />
+
+        <com.example.clasesgraficos.drawable.SubShapeDrawable
+            android:layout_width="match_parent"
+            android:layout_height="600dp" />
+
+    </LinearLayout>
+
+    <!--Subtema AnimationDrawable-->
+    <LinearLayout
+        android:id="@+id/paginaAnimationDrawable"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="90dp"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="AnimationDrawable"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/btnVolverAnimationDrawable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Volver" />
+
+        <com.example.clasesgraficos.drawable.SubAnimationDrawable
+            android:layout_width="match_parent"
+            android:layout_height="600dp" />
+
+    </LinearLayout>
+
+</FrameLayout>
